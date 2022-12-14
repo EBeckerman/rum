@@ -1,0 +1,1002 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.7297' (creator: callgrind-3.15.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 105803
+Trigger: Program termination
+Profiled target:  target/release/rum cat.um (PID 7297, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir      
+--------------------------------------------------------------------------------
+472,715  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir      file:function
+--------------------------------------------------------------------------------
+
+72,651  < /build/glibc-SzIz7B/glibc-2.31/malloc/arena.c:ptmalloc_init.part.0 (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+71,545  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-addr.c:_dl_addr [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,040  >   ???:0x00000000048a6510 (1x) [???]
+    35  >   /build/glibc-SzIz7B/glibc-2.31/nptl/../nptl/pthread_mutex_lock.c:pthread_mutex_lock (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+    31  >   /build/glibc-SzIz7B/glibc-2.31/nptl/pthread_mutex_unlock.c:pthread_mutex_unlock (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+
+93,125  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:_dl_lookup_symbol_x (197x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+69,645  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:do_lookup_x [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+22,937  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:check_match (188x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+95,073  < /build/glibc-SzIz7B/glibc-2.31/stdio-common/isoc99_sscanf.c:__isoc99_sscanf (56x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+60,264  *  /build/glibc-SzIz7B/glibc-2.31/stdio-common/vfscanf-internal.c:__vfscanf_internal [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+27,753  >   /build/glibc-SzIz7B/glibc-2.31/stdlib/../stdlib/strtol.c:__strtoul_internal (112x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 4,256  >   /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_sputbackc (224x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   952  >   /build/glibc-SzIz7B/glibc-2.31/nptl/cleanup_defer_compat.c:_pthread_cleanup_push_defer (56x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+   560  >   /build/glibc-SzIz7B/glibc-2.31/nptl/cleanup_defer_compat.c:_pthread_cleanup_pop_restore (56x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+
+123,619  < /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object (181x)
+11,294  < /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-runtime.c:_dl_fixup (16x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+41,788  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:_dl_lookup_symbol_x [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+93,125  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:do_lookup_x (197x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+32,681  *  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object
+123,619  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:_dl_lookup_symbol_x (181x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    51  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove.c:memmove (3x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    38  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memset.c:memset (2x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    34  >   /build/glibc-SzIz7B/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wmemset.c:wmemset (2x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    34  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memcpy.c:memcpy@@GLIBC_2.14 (2x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    26  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memcmp.c:bcmp (2x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    20  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memchr.c:memchr (2x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    20  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memrchr.c:memrchr (2x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    20  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strlen.c:strlen (2x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    20  >   /build/glibc-SzIz7B/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wmemchr.c:wmemchr (2x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    20  >   /build/glibc-SzIz7B/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wcschr.c:wcschr (2x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    20  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strnlen.c:strnlen (2x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    17  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/mempcpy.c:mempcpy (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    13  >   /build/glibc-SzIz7B/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wmemcmp.c:wmemcmp (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    10  >   /build/glibc-SzIz7B/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wcslen.c:wcslen (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    10  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/rawmemchr.c:rawmemchr (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    10  >   /build/glibc-SzIz7B/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wcscmp.c:wcscmp (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    10  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strrchr.c:rindex (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    10  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strchrnul.c:strchrnul (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     9  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strncmp.c:strncmp (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     9  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/stpcpy.c:stpcpy (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     9  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strncpy.c:strncpy (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     9  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strchr.c:index (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     9  >   /build/glibc-SzIz7B/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wcsnlen.c:wcsnlen (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     9  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/stpncpy.c:stpncpy (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     9  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strcmp.c:strcmp (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     9  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strcat.c:strcat (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     9  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strcpy.c:strcpy (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     7  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strspn.c:strspn (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     7  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strcspn.c:strcspn (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     7  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strpbrk.c:strpbrk (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     7  >   /build/glibc-SzIz7B/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wcscpy.c:wcscpy (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     6  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strncase_l.c:strncasecmp_l (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     6  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strcasecmp.c:strcasecmp (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     6  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strncase.c:strncasecmp (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     6  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strcasecmp_l.c:strcasecmp_l (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+27,305  < /build/glibc-SzIz7B/glibc-2.31/stdlib/../stdlib/strtol.c:__strtoul_internal (112x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+27,305  *  /build/glibc-SzIz7B/glibc-2.31/stdlib/../stdlib/strtol_l.c:____strtoul_l_internal [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+12,246  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:check_match (289x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 9,007  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-misc.c:_dl_name_match_p (232x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 1,076  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-version.c:_dl_check_map_versions (28x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   950  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object (23x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   100  < /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86/dl-procinfo.h:_dl_load_cache_lookup (4x)
+    25  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+23,404  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/strcmp.S:strcmp [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+16,772  *  /build/glibc-SzIz7B/glibc-2.31/elf/do-rel.h:_dl_relocate_object
+
+22,937  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:do_lookup_x (188x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+10,691  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:check_match [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+12,246  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/strcmp.S:strcmp (289x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+12,705  < /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-sysdep.c:_dl_sysdep_start (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 9,338  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-tunables.c:__GI___tunables_init [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+ 8,209  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/mem/maybe_uninit.rs:<std::io::buffered::bufreader::BufReader<R> as std::io::BufRead>::fill_buf (1x)
+ 8,227  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+14,819  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-version.c:_dl_check_all_versions (7x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 7,171  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-version.c:_dl_check_map_versions [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 6,344  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-misc.c:_dl_name_match_p (59x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 1,076  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/strcmp.S:strcmp (28x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   228  >   ???:0x00000000040010c0 (6x) [???]
+
+10,007  < ???:0x00000000048617f0 (55x) [???]
+ 4,466  *  /build/glibc-SzIz7B/glibc-2.31/libio/iogetdelim.c:getdelim [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 2,500  >   ???:0x00000000048a6420 (61x) [???]
+ 1,305  >   ???:0x00000000048a64d0 (61x) [???]
+ 1,123  >   /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:__underflow (6x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,109  >   ???:0x00000000048a6370 (1x) [???]
+   191  >   ???:0x00000000048a6310 (1x) [???]
+
+ 4,256  < /build/glibc-SzIz7B/glibc-2.31/stdio-common/vfscanf-internal.c:__vfscanf_internal (224x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 4,256  *  /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_sputbackc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+ 3,367  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-tunables.h:__GI___tunables_init
+
+10,062  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 3,180  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object_from_fd [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 1,889  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-object.c:_dl_new_object (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   708  >   /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86/dl-prop.h:_dl_process_pt_note (10x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   260  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-object.c:_dl_add_to_namespace_list (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   120  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:_dl_setup_hash (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    45  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-debug.c:_dl_debug_initialize (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    30  >   /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/close_nocancel.c:__GI___close_nocancel (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+     7  >   /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/pread64_nocancel.c:__pread64_nocancel (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+     7  >   /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-tls.c:_dl_next_tls_modid (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+ 6,344  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-version.c:_dl_check_map_versions (59x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 5,764  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object (49x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 3,101  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-misc.c:_dl_name_match_p [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 9,007  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/strcmp.S:strcmp (232x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+ 1,959  < /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:malloc (13x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   497  < /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:calloc (2x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   362  < /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:tcache_init.part.0 (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   136  < /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:malloc_hook_ini (1x)
+   136  < /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_realloc (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 2,823  *  /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_malloc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   236  >   /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:sysmalloc (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    31  >   /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:unlink_chunk.isra.0 (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+ 2,533  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-cache.c:_dl_load_cache_lookup (31x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 2,533  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-cache.c:_dl_cache_libcmp [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+ 2,378  < ???:0x00000000048a6420 (61x) [???]
+ 2,378  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memchr-avx2.S:__memchr_avx2 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+29,484  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 2,251  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-deps.c:_dl_map_object_deps [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+25,604  >   ???:0x0000000004001090 (11x) [???]
+   668  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-sort-maps.c:_dl_sort_maps (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   558  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_dst_count (11x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   162  >   ???:0x00000000040010a0 (6x) [???]
+   129  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:memcpy (11x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+ 5,408  < /build/glibc-SzIz7B/glibc-2.31/stdio-common/../libio/strfile.h:__isoc99_sscanf (56x)
+ 2,128  *  /build/glibc-SzIz7B/glibc-2.31/libio/strops.c:_IO_str_init_static_internal [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,880  >   ???:0x00000000048a65d0 (56x) [???]
+ 1,400  >   /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_setb (56x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+24,735  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-deps.c:openaux (11x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 2,754  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:map_doit (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 2,091  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+10,062  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object_from_fd (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 5,764  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-misc.c:_dl_name_match_p (49x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 4,466  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-cache.c:_dl_load_cache_lookup (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 2,162  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_path (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 1,275  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_verify.constprop.0 (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   950  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/strcmp.S:strcmp (23x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   285  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_verify.constprop.1 (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   246  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:expand_dynamic_string_token (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   120  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strchr.S:index (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    68  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strlen.S:strlen (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+103,886  < ???:0x0000000004861930 (55x) [???]
+ 1,960  *  /build/glibc-SzIz7B/glibc-2.31/stdio-common/isoc99_sscanf.c:__isoc99_sscanf [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+95,073  >   /build/glibc-SzIz7B/glibc-2.31/stdio-common/vfscanf-internal.c:__vfscanf_internal (56x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+ 1,768  < ???:0x00000000048a65d0 (56x) [???]
+ 1,768  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memchr-avx2.S:__rawmemchr_avx2 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+ 1,625  *  /build/glibc-SzIz7B/glibc-2.31/elf/get-dynamic-info.h:_dl_map_object_from_fd
+
+201,177  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/thread.rs:std::rt::lang_start_internal (1x)
+ 1,532  *  /build/glibc-SzIz7B/glibc-2.31/nptl/pthread_getattr_np.c:pthread_getattr_np [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+106,710  >   ???:0x0000000004861930 (56x) [???]
+76,581  >   ???:0x00000000048619d0 (1x) [???]
+11,703  >   ???:0x00000000048617f0 (56x) [???]
+ 1,240  >   ???:0x00000000048616a0 (1x) [???]
+   969  >   ???:0x0000000004861960 (1x) [???]
+   859  >   ???:0x00000000048615c0 (1x) [???]
+   803  >   /build/glibc-SzIz7B/glibc-2.31/nptl/../sysdeps/unix/sysv/linux/pthread_getaffinity.c:pthread_getaffinity_np@@GLIBC_2.3.4 (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+   780  >   ???:0x0000000004861a70 (1x) [???]
+
+ 1,275  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   583  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_path (11x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 1,460  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_verify.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   318  >   /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/open64_nocancel.c:__open_nocancel (15x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    28  >   ???:0x0000000004001080 (4x) [???]
+    28  >   /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/pread64_nocancel.c:__pread64_nocancel (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    24  >   /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/read_nocancel.c:__read_nocancel (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+ 1,400  < /build/glibc-SzIz7B/glibc-2.31/libio/strops.c:_IO_str_init_static_internal (56x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   114  < /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_close_it@@GLIBC_2.2.5 (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    25  < /build/glibc-SzIz7B/glibc-2.31/libio/filedoalloc.c:_IO_file_doallocate (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,455  *  /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_setb [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    84  >   ???:0x00000000048a6330 (1x) [???]
+
+ 1,205  < ???:0x00000000048a64d0 (62x) [???]
+    46  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/intrinsics.rs:<std::io::stdio::StdoutLock as std::io::Write>::write (3x)
+    30  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/intrinsics.rs:<&str as alloc::ffi::c_str::CString::new::SpecNewImpl>::spec_new_impl (2x)
+    26  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/intrinsics.rs:std::env::args_os (2x)
+    14  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/intrinsics.rs:<std::io::buffered::bufreader::BufReader<R> as std::io::Read>::read_to_end (1x)
+    14  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/intrinsics.rs:<std::io::buffered::bufreader::BufReader<R> as std::io::Read>::read (1x)
+    12  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/intrinsics.rs:rum::read_bin::instructs (1x)
+    12  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/intrinsics.rs:rum::main (1x)
+ 1,359  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+ 1,266  < /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:free (20x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    61  < /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_realloc (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,327  *  /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+ 2,464  < /build/glibc-SzIz7B/glibc-2.31/stdio-common/../libio/strfile.h:__isoc99_sscanf (56x)
+    53  < /build/glibc-SzIz7B/glibc-2.31/libio/iofopen.c:fopen@@GLIBC_2.2.5 (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,318  *  /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_no_init [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,199  >   /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_old_init (57x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+ 1,288  *  /build/glibc-SzIz7B/glibc-2.31/stdio-common/../include/scratch_buffer.h:__vfscanf_internal
+
+10,806  < /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (14x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 1,789  < /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave'2 (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 1,264  *  /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-runtime.c:_dl_fixup [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+11,294  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:_dl_lookup_symbol_x (16x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   737  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-fini.c:_dl_fini (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   668  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-deps.c:_dl_map_object_deps (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 1,221  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-sort-maps.c:_dl_sort_maps [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   184  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:memset (12x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+ 1,199  < /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_no_init (57x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,199  *  /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_old_init [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+ 1,889  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object_from_fd (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   231  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 1,191  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-object.c:_dl_new_object [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   330  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strlen.S:strlen (10x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   274  >   ???:0x00000000040010c0 (6x) [???]
+   135  >   ???:0x00000000040010a0 (5x) [???]
+   105  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:mempcpy (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    85  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:memcpy (6x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+ 2,162  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 1,124  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_path [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   583  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_verify.constprop.0 (11x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   346  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:mempcpy (26x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   109  >   /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/wordsize-64/xstat.c:_xstat (8x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+227,705  < /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-sysdep.c:_dl_sysdep_start (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 1,116  *  /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+175,070  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-reloc.c:_dl_relocate_object (7x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+29,484  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-deps.c:_dl_map_object_deps (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+14,958  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-error-skeleton.c:_dl_receive_error (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 3,223  >   /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:handle_preload_list (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 1,823  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_init_paths (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   668  >   /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:init_tls (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   231  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-object.c:_dl_new_object (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   216  >   /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-tls.c:_dl_allocate_tls_init (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   209  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-environ.c:_dl_next_ld_env_entry (3x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    96  >   /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c:_dl_discover_osversion (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    56  >   /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-tls.c:_dl_add_to_slotinfo (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    35  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-object.c:_dl_add_to_namespace_list (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    27  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-debug.c:_dl_debug_initialize (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    25  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/strcmp.S:strcmp (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    24  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:_dl_setup_hash (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    17  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-cache.c:_dl_unload_cache (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+     9  >   /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/access.c:access (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+     6  >   /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-tls.c:_dl_count_modids (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+     4  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-debug.c:_dl_debug_state (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+     2  >   /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-sysdep.c:_dl_sysdep_start_cleanup (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   787  < /build/glibc-SzIz7B/glibc-2.31/elf/./dl-map-segments.h:_dl_map_object_from_fd (5x)
+   184  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-sort-maps.c:_dl_sort_maps (12x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    52  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_init_paths (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    51  < /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-tls.c:_dl_allocate_tls_init (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 1,074  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:memset [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   952  < /build/glibc-SzIz7B/glibc-2.31/stdio-common/vfscanf-internal.c:__vfscanf_internal (56x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    17  < /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_flush_all_lockp (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    17  < /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_cleanup (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    17  < /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:__GI__IO_un_link.part.0 (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    17  < /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_link_in (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,020  *  /build/glibc-SzIz7B/glibc-2.31/nptl/cleanup_defer_compat.c:_pthread_cleanup_push_defer [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+
+ 4,466  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 1,017  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-cache.c:_dl_load_cache_lookup [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 2,533  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-cache.c:_dl_cache_libcmp (31x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   388  >   /build/glibc-SzIz7B/glibc-2.31/string/strdup.c:strdup (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   140  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strlen.S:strlen (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    99  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-misc.c:_dl_sysdep_read_whole_file (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    80  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-tunables.c:__tunable_get_val (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    68  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:memcpy (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+ 1,010  < ???:0x00000000040010a0 (37x) [???]
+   970  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-minimal.c:malloc [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    40  >   /build/glibc-SzIz7B/glibc-2.31/misc/../sysdeps/unix/sysv/linux/mmap64.c:mmap (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+175,070  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main (7x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   888  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-reloc.c:_dl_relocate_object [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    42  >   /build/glibc-SzIz7B/glibc-2.31/misc/../sysdeps/unix/syscall-template.S:mprotect (7x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   840  *  /build/glibc-SzIz7B/glibc-2.31/stdio-common/../libio/strfile.h:__isoc99_sscanf
+ 5,408  >   /build/glibc-SzIz7B/glibc-2.31/libio/strops.c:_IO_str_init_static_internal (56x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 2,464  >   /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_no_init (56x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+75,741  < ???:0x00000000048a6310 (3x) [???]
+ 2,202  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/alloc.rs:__rdl_alloc (15x)
+   189  < /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:realloc (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   828  *  /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+75,345  >   /build/glibc-SzIz7B/glibc-2.31/malloc/hooks.c:malloc_hook_ini (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,959  >   /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_malloc (13x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   330  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-object.c:_dl_new_object (10x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   218  < /build/glibc-SzIz7B/glibc-2.31/string/strdup.c:strdup (6x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   140  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-cache.c:_dl_load_cache_lookup (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    68  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    17  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-hwcaps.c:_dl_important_hwcaps (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    17  < /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-sysdep.c:_dl_sysdep_start (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    17  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:fillin_rpath (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    17  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_init_paths (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   824  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strlen.S:strlen [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   780  *  src/read_bin.rs:rum::read_bin::instructs [/home/evan/rum/target/release/rum]
+ 9,298  >   /home/evan/rum/src/instruct.rs:rum::instruct::input (4x)
+   196  >   /home/evan/rum/src/instruct.rs:rum::instruct::load_prog (7x)
+
+   768  *  /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:ptmalloc_init.part.0
+
+ 1,268  < /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86/cacheinfo.c:handle_intel.constprop.0 (6x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   758  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86/cacheinfo.c:intel_check_word.isra.0 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   708  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object_from_fd (10x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   687  *  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86/dl-prop.h:_dl_process_pt_note [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    21  >   /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/pread64_nocancel.c:__pread64_nocancel (3x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   675  *  /build/glibc-SzIz7B/glibc-2.31/elf/./dl-map-segments.h:_dl_map_object_from_fd
+   787  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:memset (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   406  >   /build/glibc-SzIz7B/glibc-2.31/misc/../sysdeps/unix/sysv/linux/mmap64.c:mmap (22x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   560  < /build/glibc-SzIz7B/glibc-2.31/stdio-common/vfscanf-internal.c:__vfscanf_internal (56x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    10  < /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_cleanup (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    10  < /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:__GI__IO_un_link.part.0 (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    10  < /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_link_in (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    10  < /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_flush_all_lockp (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   600  *  /build/glibc-SzIz7B/glibc-2.31/nptl/cleanup_defer_compat.c:_pthread_cleanup_pop_restore [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+
+   747  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_init_paths (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   598  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-hwcaps.c:_dl_important_hwcaps [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    79  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:mempcpy (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    27  >   ???:0x00000000040010a0 (1x) [???]
+    20  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-tunables.c:__tunable_get_val (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    17  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strlen.S:strlen (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   360  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_dst_count (11x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   120  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   114  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:expand_dynamic_string_token (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   594  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strchr.S:index [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   346  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_path (26x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   105  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-object.c:_dl_new_object (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    79  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-hwcaps.c:_dl_important_hwcaps (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    34  < /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-tls.c:_dl_allocate_tls_init (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    13  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:fillin_rpath (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   577  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:mempcpy [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+76,574  < ???:0x00000000048619d0 (1x) [???]
+ 2,707  < ???:0x0000000004861930 (1x) [???]
+ 1,579  < ???:0x00000000048617f0 (1x) [???]
+ 1,303  < ???:0x0000000004861940 (1x) [???]
+ 1,233  < ???:0x00000000048616a0 (1x) [???]
+ 1,102  < ???:0x00000000048a6370 (1x) [???]
+ 1,001  < ???:0x0000000004861a30 (1x) [???]
+   965  < ???:0x0000000004861a10 (1x) [???]
+   962  < ???:0x0000000004861960 (1x) [???]
+   942  < ???:0x00000000048a6550 (1x) [???]
+   878  < ???:0x00000000048615d0 (1x) [???]
+   852  < ???:0x00000000048615c0 (1x) [???]
+   776  < ???:0x0000000004861740 (1x) [???]
+   773  < ???:0x0000000004861a70 (1x) [???]
+   574  *  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+10,806  >   /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-runtime.c:_dl_fixup (14x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   218  < ???:0x00000000048a6450 (11x) [???]
+   114  < /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86/cpu-features.c:_dl_sysdep_start (6x)
+    95  < ???:0x0000000004861a10 (5x) [???]
+    80  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-cache.c:_dl_load_cache_lookup (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    20  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-hwcaps.c:_dl_important_hwcaps (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   565  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-tunables.c:__tunable_get_val [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   552  *  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h:_dl_relocate_object
+
+   543  *  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h:do_lookup_x
+
+   510  *  /build/glibc-SzIz7B/glibc-2.31/string/../bits/stdlib-bsearch.h:intel_check_word.isra.0
+
+   406  < /build/glibc-SzIz7B/glibc-2.31/elf/./dl-map-segments.h:_dl_map_object_from_fd (22x)
+    40  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-minimal.c:malloc (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    20  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-misc.c:_dl_sysdep_read_whole_file (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    20  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/stack_overflow.rs:std::sys::unix::stack_overflow::imp::make_handler (1x) [/home/evan/rum/target/release/rum]
+   486  *  /build/glibc-SzIz7B/glibc-2.31/misc/../sysdeps/unix/sysv/linux/mmap64.c:mmap [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+ 1,822  < /build/glibc-SzIz7B/glibc-2.31/stdlib/exit.c:__run_exit_handlers (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   452  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-fini.c:_dl_fini [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   737  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-sort-maps.c:_dl_sort_maps (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   106  >   ???:0x00000000000010e0 (1x) [/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_core-amd64-linux.so]
+   106  >   ???:0x00000000000012a0 (1x) [/usr/lib/x86_64-linux-gnu/libdl-2.31.so]
+   106  >   ???:0x0000000000006b80 (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+   106  >   ???:0x0000000000003cd0 (1x) [/usr/lib/x86_64-linux-gnu/libgcc_s.so.1]
+   105  >   ???:0x0000000000008ad0 (1x) [/home/evan/rum/target/release/rum]
+    35  >   /build/glibc-SzIz7B/glibc-2.31/nptl/../nptl/pthread_mutex_lock.c:pthread_mutex_lock (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+    31  >   /build/glibc-SzIz7B/glibc-2.31/nptl/pthread_mutex_unlock.c:pthread_mutex_unlock (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+    18  >   /build/glibc-SzIz7B/glibc-2.31/dlfcn/dlerror.c:fini (1x) [/usr/lib/x86_64-linux-gnu/libdl-2.31.so]
+     4  >   ???:0x0000000004871538 (1x) [???]
+     4  >   ???:0x000000000483129c (1x) [???]
+     4  >   ???:0x0000000004854048 (1x) [???]
+     4  >   ???:0x000000000488017c (1x) [???]
+     4  >   ???:0x000000000014b184 (1x) [???]
+
+27,753  < /build/glibc-SzIz7B/glibc-2.31/stdio-common/vfscanf-internal.c:__vfscanf_internal (112x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   448  *  /build/glibc-SzIz7B/glibc-2.31/stdlib/../stdlib/strtol.c:__strtoul_internal [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+27,305  >   /build/glibc-SzIz7B/glibc-2.31/stdlib/../stdlib/strtol_l.c:____strtoul_l_internal (112x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   439  *  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h:_dl_start
+
+   129  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-deps.c:_dl_map_object_deps (11x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   106  < /build/glibc-SzIz7B/glibc-2.31/string/strdup.c:strdup (6x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    85  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-object.c:_dl_new_object (6x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    68  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-cache.c:_dl_load_cache_lookup (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    27  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:handle_preload_list (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    11  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_init_paths (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   426  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:memcpy [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+28,410  < ???:0x0000000004001090 (12x) [???]
+   420  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-error-skeleton.c:_dl_catch_exception [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+24,933  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-deps.c:openaux (11x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 2,769  >   /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:map_doit (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   288  >   /build/glibc-SzIz7B/glibc-2.31/setjmp/../sysdeps/x86_64/setjmp.S:__sigsetjmp (12x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+ 1,276  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/alloc.rs:__rdl_dealloc (15x) [/home/evan/rum/target/release/rum]
+   328  < ???:0x00000000048a6330 (4x) [???]
+   420  *  /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,266  >   /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_free (20x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+241,230  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:_dl_start (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   408  *  /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-sysdep.c:_dl_sysdep_start [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+227,705  >   /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+12,705  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-tunables.c:__GI___tunables_init (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    18  >   /build/glibc-SzIz7B/glibc-2.31/elf/../misc/sbrk.c:sbrk (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    17  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strlen.S:strlen (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   318  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_verify.constprop.0 (15x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    27  < /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_open (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    19  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-misc.c:_dl_sysdep_read_whole_file (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    19  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_verify.constprop.1 (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   383  *  /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/open64_nocancel.c:__open_nocancel [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   349  *  /build/glibc-SzIz7B/glibc-2.31/elf/get-dynamic-info.h:dl_main
+
+ 6,987  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-init.c:_dl_init (7x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   346  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-init.c:call_init.part.0 [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 4,460  >   ???:0x0000000004861000 (1x) [???]
+ 1,688  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86/cacheinfo.c:init_cacheinfo (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   166  >   ???:__cpu_indicator_init (1x) [/usr/lib/x86_64-linux-gnu/libgcc_s.so.1]
+   142  >   /build/glibc-SzIz7B/glibc-2.31/nptl/../sysdeps/unix/sysv/linux/x86/elision-conf.c:elision_init (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+   100  >   /build/glibc-SzIz7B/glibc-2.31/csu/init-first.c:_init (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    12  >   ???:0x0000000000003d10 (1x) [/usr/lib/x86_64-linux-gnu/libgcc_s.so.1]
+    12  >   ???:0x00000000000012e0 (1x) [/usr/lib/x86_64-linux-gnu/libdl-2.31.so]
+    12  >   ???:0x0000000000001120 (1x) [/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_core-amd64-linux.so]
+    12  >   ???:0x0000000000006bc0 (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+    12  >   /build/glibc-SzIz7B/glibc-2.31/libio/vtables.c:check_stdfiles_vtables (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     7  >   ???:0x000000000487f000 (1x) [???]
+     7  >   ???:0x0000000004831000 (1x) [???]
+     7  >   ???:0x0000000004843000 (1x) [???]
+     4  >   /build/glibc-SzIz7B/glibc-2.31/dlfcn/dlfcn.c:init (1x) [/usr/lib/x86_64-linux-gnu/libdl-2.31.so]
+
+   394  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:init_tls (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   329  *  /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-tls.c:_dl_allocate_tls_storage [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    38  >   ???:0x00000000040010c0 (1x) [???]
+    27  >   ???:0x00000000040010a0 (1x) [???]
+
+ 1,823  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   327  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_init_paths [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   747  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-hwcaps.c:_dl_important_hwcaps (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   588  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:fillin_rpath (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    81  >   ???:0x00000000040010a0 (3x) [???]
+    52  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:memset (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    17  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strlen.S:strlen (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    11  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:memcpy (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   310  *  /build/glibc-SzIz7B/glibc-2.31/nptl/libc_pthread_init.c:__libc_pthread_init [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    41  >   /build/glibc-SzIz7B/glibc-2.31/nptl/register-atfork.c:__register_atfork (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   288  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-error-skeleton.c:_dl_catch_exception (12x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    31  < /build/glibc-SzIz7B/glibc-2.31/setjmp/../sysdeps/x86_64/bsd-_setjmp.S:_setjmp (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   310  *  /build/glibc-SzIz7B/glibc-2.31/setjmp/../sysdeps/x86_64/setjmp.S:__sigsetjmp [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+     9  >   /build/glibc-SzIz7B/glibc-2.31/setjmp/sigjmp.c:__sigjmp_save (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   309  *  /build/glibc-SzIz7B/glibc-2.31/elf/do-rel.h:_dl_start
+
+   896  < /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:__underflow (6x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   307  *  /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_underflow@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   313  >   /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_doallocbuf (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   150  >   /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_switch_to_get_mode (6x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    72  >   /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_read (6x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   204  < /build/glibc-SzIz7B/glibc-2.31/nptl/../nptl/sigaction.c:sigaction (4x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+   102  < /build/glibc-SzIz7B/glibc-2.31/nptl/nptl-init.c:__pthread_initialize_minimal (2x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+   306  *  /build/glibc-SzIz7B/glibc-2.31/nptl/../sysdeps/unix/sysv/linux/sigaction.c:__libc_sigaction [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+
+   273  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:handle_preload_list (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   273  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/strcspn.S:strcspn [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+    86  < ???:0x000000000010f070 (1x) [???]
+    86  < ???:0x0000000004831040 (1x) [???]
+    86  < ???:0x0000000004861580 (1x) [???]
+    86  < ???:0x0000000004843300 (1x) [???]
+    86  < ???:0x000000000487f140 (1x) [???]
+   270  *  /build/glibc-SzIz7B/glibc-2.31/stdlib/cxa_finalize.c:__cxa_finalize [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   140  >   /build/glibc-SzIz7B/glibc-2.31/nptl/register-atfork.c:__unregister_atfork (5x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   260  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object_from_fd (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    35  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   259  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-object.c:_dl_add_to_namespace_list [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    18  >   /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:rtld_lock_default_lock_recursive (6x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    18  >   /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:rtld_lock_default_unlock_recursive (6x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   285  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   253  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_verify.constprop.1 [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    19  >   /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/open64_nocancel.c:__open_nocancel (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+     7  >   ???:0x0000000004001080 (1x) [???]
+     6  >   /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/read_nocancel.c:__read_nocancel (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   248  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:fillin_rpath (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   248  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-minimal.c:strsep [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+ 1,688  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-init.c:call_init.part.0 (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   243  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86/cacheinfo.c:init_cacheinfo [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,445  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86/cacheinfo.c:handle_intel.constprop.0 (3x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   238  *  /build/glibc-SzIz7B/glibc-2.31/elf/get-dynamic-info.h:_dl_start
+
+   209  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main (3x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   209  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-environ.c:_dl_next_ld_env_entry [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   207  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/slice/index.rs:rum::read_bin::instructs
+
+24,933  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-error-skeleton.c:_dl_catch_exception (11x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   198  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-deps.c:openaux [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+24,735  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object (11x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   558  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-deps.c:_dl_map_object_deps (11x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   198  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_dst_count [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   360  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strchr.S:index (11x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+ 1,123  < /build/glibc-SzIz7B/glibc-2.31/libio/iogetdelim.c:getdelim (6x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   185  *  /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:__underflow [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   896  >   /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_underflow@@GLIBC_2.2.5 (6x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+ 1,445  < /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86/cacheinfo.c:init_cacheinfo (3x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   177  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86/cacheinfo.c:handle_intel.constprop.0 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,268  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86/cacheinfo.c:intel_check_word.isra.0 (6x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   120  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object_from_fd (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    24  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    24  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:_dl_start (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   168  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:_dl_setup_hash [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   434  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/alloc.rs:__rdl_alloc_zeroed (1x)
+   159  *  /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:calloc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   497  >   /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_malloc (2x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+ 4,455  < ???:0x0000000004861000 (1x) [???]
+   157  *  /build/glibc-SzIz7B/glibc-2.31/nptl/nptl-init.c:__pthread_initialize_minimal [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+ 1,310  >   ???:0x0000000004861940 (1x) [???]
+ 1,008  >   ???:0x0000000004861a30 (1x) [???]
+   986  >   /build/glibc-SzIz7B/glibc-2.31/nptl/pthread_mutex_conf.c:__pthread_tunables_init (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+   885  >   ???:0x00000000048615d0 (1x) [???]
+   102  >   /build/glibc-SzIz7B/glibc-2.31/nptl/../sysdeps/unix/sysv/linux/sigaction.c:__libc_sigaction (2x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+
+   588  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_init_paths (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   156  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:fillin_rpath [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   248  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-minimal.c:strsep (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   120  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:expand_dynamic_string_token (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    27  >   ???:0x00000000040010a0 (1x) [???]
+    17  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strlen.S:strlen (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    13  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:mempcpy (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+     7  >   ???:0x0000000004001080 (1x) [???]
+
+   152  *  /build/glibc-SzIz7B/glibc-2.31/elf/./dl-load.h:_dl_map_object_from_fd
+
+   150  < /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_underflow@@GLIBC_2.2.5 (6x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   150  *  /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_switch_to_get_mode [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   147  *  src/instruct.rs:rum::instruct::load_prog [/home/evan/rum/target/release/rum]
+
+   146  *  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86/cpu-features.c:_dl_sysdep_start
+   114  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-tunables.c:__tunable_get_val (6x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    99  >   /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86/cpu-features.c:get_common_indices.constprop.0 (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   236  < /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_malloc (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   144  *  /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:sysmalloc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    89  >   /build/glibc-SzIz7B/glibc-2.31/malloc/morecore.c:__default_morecore (2x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   132  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/os.rs:std::sys::unix::stack_overflow::imp::make_handler (3x)
+    88  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/os.rs:std::sync::once::Once::call_once::{{closure}} (2x)
+    44  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/os.rs:std::rt::lang_start_internal (1x)
+   132  *  /build/glibc-SzIz7B/glibc-2.31/posix/../sysdeps/unix/sysv/linux/x86/sysconf.c:sysconf [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   216  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   131  *  /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-tls.c:_dl_allocate_tls_init [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    51  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:memset (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    34  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:mempcpy (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   130  *  src/instruct.rs:rum::read_bin::instructs
+   587  >   /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/stdio.rs:<std::io::stdio::Stdout as std::io::Write>::write (3x) [/home/evan/rum/target/release/rum]
+   170  >   /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/stdio.rs:std::io::stdio::stdout (3x) [/home/evan/rum/target/release/rum]
+
+   589  < ???:0x00000000040010c0 (14x) [???]
+   126  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-minimal.c:calloc [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   463  >   ???:0x00000000040010a0 (14x) [???]
+
+ 1,305  < /build/glibc-SzIz7B/glibc-2.31/libio/iogetdelim.c:getdelim (61x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    24  < /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_realloc (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   124  *  ???:0x00000000048a64d0 [???]
+ 1,205  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms (62x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+ 2,500  < /build/glibc-SzIz7B/glibc-2.31/libio/iogetdelim.c:getdelim (61x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   122  *  ???:0x00000000048a6420 [???]
+ 2,378  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memchr-avx2.S:__memchr_avx2 (61x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   150  < /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_cleanup (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   118  *  /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_flush_all_lockp [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    17  >   /build/glibc-SzIz7B/glibc-2.31/nptl/cleanup_defer_compat.c:_pthread_cleanup_push_defer (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+    10  >   /build/glibc-SzIz7B/glibc-2.31/nptl/cleanup_defer_compat.c:_pthread_cleanup_pop_restore (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+
+11,703  < /build/glibc-SzIz7B/glibc-2.31/nptl/pthread_getattr_np.c:pthread_getattr_np (56x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+   117  *  ???:0x00000000048617f0 [???]
+10,007  >   /build/glibc-SzIz7B/glibc-2.31/libio/iogetdelim.c:getdelim (55x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,579  >   /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+106,710  < /build/glibc-SzIz7B/glibc-2.31/nptl/pthread_getattr_np.c:pthread_getattr_np (56x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+   117  *  ???:0x0000000004861930 [???]
+103,886  >   /build/glibc-SzIz7B/glibc-2.31/stdio-common/isoc99_sscanf.c:__isoc99_sscanf (55x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 2,707  >   /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   116  *  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/posix/dl-fileid.h:_dl_map_object_from_fd
+    55  >   /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:_fxstat (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   140  < /build/glibc-SzIz7B/glibc-2.31/stdlib/cxa_finalize.c:__cxa_finalize (5x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   115  *  /build/glibc-SzIz7B/glibc-2.31/nptl/register-atfork.c:__unregister_atfork [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   112  *  /build/glibc-SzIz7B/glibc-2.31/libio/libioP.h:getdelim
+
+   476  < /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:malloc_hook_ini (1x)
+   112  *  /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:tcache_init.part.0 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   362  >   /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_malloc (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+ 8,576  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/stdio.rs:<std::io::stdio::Stdin as std::io::Read>::read (4x) [/home/evan/rum/target/release/rum]
+   112  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/buffered/bufreader.rs:<std::io::buffered::bufreader::BufReader<R> as std::io::Read>::read [/home/evan/rum/target/release/rum]
+ 8,384  >   /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/buffered/bufreader.rs:<std::io::buffered::bufreader::BufReader<R> as std::io::BufRead>::fill_buf (4x) [/home/evan/rum/target/release/rum]
+
+ 1,880  < /build/glibc-SzIz7B/glibc-2.31/libio/strops.c:_IO_str_init_static_internal (56x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   112  *  ???:0x00000000048a65d0 [???]
+ 1,768  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memchr-avx2.S:__rawmemchr_avx2 (56x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+ 7,098  < ???:0x0000000000001100 (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   111  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-init.c:_dl_init [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 6,987  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-init.c:call_init.part.0 (7x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+14,930  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:version_check_doit (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   111  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-version.c:_dl_check_all_versions [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+14,819  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-version.c:_dl_check_map_versions (7x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   123  < /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_new_file_init_internal (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    19  < /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_open (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   111  *  /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_link_in [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    17  >   /build/glibc-SzIz7B/glibc-2.31/nptl/cleanup_defer_compat.c:_pthread_cleanup_push_defer (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+    10  >   /build/glibc-SzIz7B/glibc-2.31/nptl/cleanup_defer_compat.c:_pthread_cleanup_pop_restore (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+
+   110  *  src/instruct.rs:rum::instruct::input [/home/evan/rum/target/release/rum]
+ 8,768  >   /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/stdio.rs:<std::io::stdio::Stdin as std::io::Read>::read (4x) [/home/evan/rum/target/release/rum]
+   416  >   /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/stdio.rs:std::io::stdio::stdin (4x) [/home/evan/rum/target/release/rum]
+
+   109  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_path (8x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   109  *  /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/wordsize-64/xstat.c:_xstat [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   388  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-cache.c:_dl_load_cache_lookup (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   206  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:expand_dynamic_string_token (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   108  *  /build/glibc-SzIz7B/glibc-2.31/string/strdup.c:strdup [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   218  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strlen.S:strlen (6x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   162  >   ???:0x00000000040010a0 (6x) [???]
+   106  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:memcpy (6x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+ 8,384  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/buffered/bufreader.rs:<std::io::buffered::bufreader::BufReader<R> as std::io::Read>::read (4x) [/home/evan/rum/target/release/rum]
+   108  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/buffered/bufreader.rs:<std::io::buffered::bufreader::BufReader<R> as std::io::BufRead>::fill_buf [/home/evan/rum/target/release/rum]
+
+ 8,768  < src/instruct.rs:rum::instruct::input (4x) [/home/evan/rum/target/release/rum]
+   108  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/stdio.rs:<std::io::stdio::Stdin as std::io::Read>::read [/home/evan/rum/target/release/rum]
+ 8,576  >   /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/buffered/bufreader.rs:<std::io::buffered::bufreader::BufReader<R> as std::io::Read>::read (4x) [/home/evan/rum/target/release/rum]
+
+    35  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-fini.c:_dl_fini (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    35  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-addr.c:_dl_addr (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    35  < /build/glibc-SzIz7B/glibc-2.31/stdlib/cxa_thread_atexit_impl.c:__cxa_thread_atexit_impl (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   105  *  /build/glibc-SzIz7B/glibc-2.31/nptl/../nptl/pthread_mutex_lock.c:pthread_mutex_lock [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+
+   369  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sync/once.rs:std::sync::once_lock::OnceLock<T>::initialize (1x)
+   351  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sync/once.rs:std::rt::lang_start_internal (1x)
+   136  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sync/once.rs:std::io::stdio::stdout (1x)
+   105  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sync/once.rs:std::sync::once::Once::call_inner [/home/evan/rum/target/release/rum]
+   377  >   /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sync/once.rs:std::sync::once::Once::call_once_force::{{closure}} (2x) [/home/evan/rum/target/release/rum]
+   287  >   /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sync/once.rs:std::sync::once::Once::call_once::{{closure}} (1x) [/home/evan/rum/target/release/rum]
+
+   105  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/alloc.rs:__rdl_alloc
+ 2,202  >   /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:malloc (15x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   105  < ???:__cpu_indicator_init (1x) [/usr/lib/x86_64-linux-gnu/libgcc_s.so.1]
+   105  *  ???:0x00000000000036d0 [/usr/lib/x86_64-linux-gnu/libgcc_s.so.1]
+
+   103  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:init_tls (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   103  *  /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-tls.c:_dl_determine_tlsoffset [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+    92  < ???:0x00000000048a6510 (1x) [???]
+   102  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-open.c:_dl_find_dso_for_object [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    56  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-addr-obj.c:_dl_addr_inside_object (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+    99  < /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86/cpu-features.c:_dl_sysdep_start (1x)
+    99  *  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86/cpu-features.c:get_common_indices.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+    99  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/str/validations.rs:core::str::converts::from_utf8
+
+   279  < /build/glibc-SzIz7B/glibc-2.31/stdlib/exit.c:__run_exit_handlers (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    97  *  /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_cleanup [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   150  >   /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_flush_all_lockp (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    17  >   /build/glibc-SzIz7B/glibc-2.31/nptl/cleanup_defer_compat.c:_pthread_cleanup_push_defer (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+    10  >   /build/glibc-SzIz7B/glibc-2.31/nptl/cleanup_defer_compat.c:_pthread_cleanup_pop_restore (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+
+ 2,521  < /build/glibc-SzIz7B/glibc-2.31/stdlib/exit.c:exit (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    96  *  /build/glibc-SzIz7B/glibc-2.31/stdlib/exit.c:__run_exit_handlers [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,822  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-fini.c:_dl_fini (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   312  >   /build/glibc-SzIz7B/glibc-2.31/stdlib/cxa_thread_atexit_impl.c:__call_tls_dtors (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   279  >   /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_cleanup (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     6  >   /build/glibc-SzIz7B/glibc-2.31/posix/../sysdeps/unix/sysv/linux/_exit.c:_Exit (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   668  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    94  *  /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:init_tls [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   394  >   /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-tls.c:_dl_allocate_tls_storage (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   103  >   /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-tls.c:_dl_determine_tlsoffset (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    77  >   ???:0x00000000040010c0 (1x) [???]
+
+   235  < /build/glibc-SzIz7B/glibc-2.31/libio/iofopen.c:fopen@@GLIBC_2.2.5 (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    93  *  /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_fopen@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    80  >   /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_open (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    62  >   /build/glibc-SzIz7B/glibc-2.31/string/../string/strstr.c:__GI_strstr (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+    31  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-fini.c:_dl_fini (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    31  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-addr.c:_dl_addr (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    31  < /build/glibc-SzIz7B/glibc-2.31/stdlib/cxa_thread_atexit_impl.c:__cxa_thread_atexit_impl (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    93  *  /build/glibc-SzIz7B/glibc-2.31/nptl/pthread_mutex_unlock.c:pthread_mutex_unlock [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+
+    92  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/memchr.rs:<std::io::stdio::StdoutLock as std::io::Write>::write (3x)
+    92  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memrchr-avx2.S:__memrchr_avx2 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+    96  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    90  *  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c:_dl_discover_osversion [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+     6  >   /build/glibc-SzIz7B/glibc-2.31/posix/../sysdeps/unix/syscall-template.S:uname (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+    90  < /build/glibc-SzIz7B/glibc-2.31/elf/../include/scratch_buffer.h:_dl_map_object_deps (5x)
+    90  *  /build/glibc-SzIz7B/glibc-2.31/malloc/scratch_buffer_set_array_size.c:__libc_scratch_buffer_set_array_size [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+74,672  < /build/glibc-SzIz7B/glibc-2.31/malloc/arena.c:malloc_hook_ini (1x)
+    83  *  /build/glibc-SzIz7B/glibc-2.31/malloc/arena.c:ptmalloc_init.part.0 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+72,651  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-addr.c:_dl_addr (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ 1,170  >   ???:0x00000000048a6450 (12x) [???]
+
+ 1,033  < ???:0x00000000048a6510 (1x) [???]
+   923  < ???:0x00000000048a6450 (1x) [???]
+    82  *  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave'2 [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 1,789  >   /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-runtime.c:_dl_fixup (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+    81  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/alloc/src/vec/mod.rs:rum::read_bin::instructs
+   283  >   /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/alloc/src/raw_vec.rs:alloc::raw_vec::RawVec<T,A>::reserve_for_push (1x) [/home/evan/rum/target/release/rum]
+
+   557  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/stdio.rs:<std::io::stdio::Stdout as std::io::Write>::write (3x) [/home/evan/rum/target/release/rum]
+    81  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/stdio.rs:<&std::io::stdio::Stdout as std::io::Write>::write [/home/evan/rum/target/release/rum]
+   413  >   /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/stdio.rs:<std::io::stdio::StdoutLock as std::io::Write>::write (3x) [/home/evan/rum/target/release/rum]
+
+    78  *  src/bitpack.rs:rum::read_bin::instructs
+
+    55  < /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/posix/dl-fileid.h:_dl_map_object_from_fd (5x)
+    11  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-misc.c:_dl_sysdep_read_whole_file (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    11  < /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_stat (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    77  *  /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:_fxstat [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+    75  < /build/glibc-SzIz7B/glibc-2.31/signal/../nptl/sigaction.c:sigaction (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    75  *  /build/glibc-SzIz7B/glibc-2.31/signal/../sysdeps/unix/sysv/linux/sigaction.c:__libc_sigaction [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+242,314  < ???:0x0000000000001100 (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    74  *  /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:_dl_start [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+241,230  >   /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-sysdep.c:_dl_sysdep_start (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    24  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:_dl_setup_hash (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   463  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-minimal.c:calloc (14x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   162  < /build/glibc-SzIz7B/glibc-2.31/string/strdup.c:strdup (6x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   162  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-deps.c:_dl_map_object_deps (6x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   135  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-object.c:_dl_new_object (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    81  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_init_paths (3x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    27  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:fillin_rpath (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    27  < /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-tls.c:_dl_allocate_tls_storage (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    27  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-hwcaps.c:_dl_important_hwcaps (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    74  *  ???:0x00000000040010a0 [???]
+ 1,010  >   /build/glibc-SzIz7B/glibc-2.31/elf/dl-minimal.c:malloc (37x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+    45  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object_from_fd (5x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    27  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    72  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-debug.c:_dl_debug_initialize [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   100  < /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_un_link (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    71  *  /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:__GI__IO_un_link.part.0 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    17  >   /build/glibc-SzIz7B/glibc-2.31/nptl/cleanup_defer_compat.c:_pthread_cleanup_push_defer (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+    10  >   /build/glibc-SzIz7B/glibc-2.31/nptl/cleanup_defer_compat.c:_pthread_cleanup_pop_restore (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+
+ 3,223  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    68  *  /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:handle_preload_list [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+ 2,855  >   ???:0x00000000040010f0 (1x) [???]
+   273  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/strcspn.S:strcspn (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    27  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:memcpy (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+    36  < /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_read (6x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    24  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_verify.constprop.0 (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+     6  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_verify.constprop.1 (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    66  *  /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/read_nocancel.c:__read_nocancel [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   284  < /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:realloc_hook_ini (1x)
+    63  *  /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_realloc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   136  >   /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_malloc (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    61  >   /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_free (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    24  >   ???:0x00000000048a64d0 (1x) [???]
+
+   177  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/fs.rs:std::fs::buffer_capacity_required (1x)
+    62  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/fs.rs:std::sys::unix::fs::try_statx [/home/evan/rum/target/release/rum]
+    13  >   /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/ptr/mod.rs:core::ptr::drop_in_place<std::io::error::Error> (1x) [/home/evan/rum/target/release/rum]
+
+   166  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-init.c:call_init.part.0 (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    61  *  ???:__cpu_indicator_init [/usr/lib/x86_64-linux-gnu/libgcc_s.so.1]
+   105  >   ???:0x00000000000036d0 (1x) [/usr/lib/x86_64-linux-gnu/libgcc_s.so.1]
+
+223,272  < ???:_start (1x) [/home/evan/rum/target/release/rum]
+    59  *  /build/glibc-SzIz7B/glibc-2.31/csu/../csu/libc-start.c:(below main) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+220,518  >   ???:main (1x) [/home/evan/rum/target/release/rum]
+ 2,529  >   /build/glibc-SzIz7B/glibc-2.31/stdlib/exit.c:exit (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    68  >   /build/glibc-SzIz7B/glibc-2.31/stdlib/cxa_atexit.c:__cxa_atexit (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    64  >   ???:__libc_csu_init (1x) [/home/evan/rum/target/release/rum]
+    34  >   /build/glibc-SzIz7B/glibc-2.31/setjmp/../sysdeps/x86_64/bsd-_setjmp.S:_setjmp (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+    73  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/buffered/linewritershim.rs:<std::io::stdio::StdoutLock as std::io::Write>::write (1x)
+    21  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/buffered/bufwriter.rs:std::sync::once::Once::call_once::{{closure}} (1x)
+    59  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/buffered/bufwriter.rs:std::io::buffered::bufwriter::BufWriter<W>::flush_buf [/home/evan/rum/target/release/rum]
+
+    56  < /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    56  *  /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-tls.c:_dl_add_to_slotinfo [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+    56  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-open.c:_dl_find_dso_for_object (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    56  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-addr-obj.c:_dl_addr_inside_object [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+    28  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_verify.constprop.0 (4x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    21  < /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86/dl-prop.h:_dl_process_pt_note (3x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+     7  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object_from_fd (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    56  *  /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/pread64_nocancel.c:__pread64_nocancel [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+    93  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/fs.rs:std::fs::OpenOptions::_open (1x)
+    56  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/fs.rs:std::sys::unix::fs::File::open_c [/home/evan/rum/target/release/rum]
+    34  >   /build/glibc-SzIz7B/glibc-2.31/nptl/../sysdeps/unix/sysv/linux/open64.c:open (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+
+    54  *  /build/glibc-SzIz7B/glibc-2.31/libio/libioP.h:_IO_file_underflow@@GLIBC_2.2.5
+
+    54  *  /build/glibc-SzIz7B/glibc-2.31/posix/../sysdeps/posix/sysconf.c:sysconf
+    36  >   /build/glibc-SzIz7B/glibc-2.31/misc/../sysdeps/unix/sysv/linux/getpagesize.c:getpagesize (6x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+    54  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-memset.h:memset
+
+    54  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/slice/iter/macros.rs:<&str as alloc::ffi::c_str::CString::new::SpecNewImpl>::spec_new_impl
+
+    53  *  /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:realloc_hook_ini
+   284  >   /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_realloc (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+    73  < /build/glibc-SzIz7B/glibc-2.31/malloc/morecore.c:__default_morecore (2x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    51  *  /build/glibc-SzIz7B/glibc-2.31/misc/sbrk.c:sbrk [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    22  >   /build/glibc-SzIz7B/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64/brk.c:brk (2x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   413  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/stdio.rs:<&std::io::stdio::Stdout as std::io::Write>::write (3x) [/home/evan/rum/target/release/rum]
+    51  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/stdio.rs:<std::io::stdio::StdoutLock as std::io::Write>::write [/home/evan/rum/target/release/rum]
+
+    57  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/ptr/mod.rs:std::sync::once::Once::call_inner (3x)
+    51  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sync/once.rs:<std::sync::once::WaiterQueue as core::ops::drop::Drop>::drop [/home/evan/rum/target/release/rum]
+
+    50  *  /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:realloc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   364  >   /build/glibc-SzIz7B/glibc-2.31/malloc/hooks.c:realloc_hook_ini (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   189  >   /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:malloc (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   321  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/alloc/src/ffi/c_str.rs:std::rt::lang_start_internal (1x)
+   187  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/alloc/src/ffi/c_str.rs:std::fs::OpenOptions::_open (1x)
+    50  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/alloc/src/ffi/c_str.rs:<&str as alloc::ffi::c_str::CString::new::SpecNewImpl>::spec_new_impl [/home/evan/rum/target/release/rum]
+    84  >   /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/alloc/src/ffi/c_str.rs:alloc::ffi::c_str::CString::_from_vec_unchecked (2x) [/home/evan/rum/target/release/rum]
+
+    49  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/slice/index.rs:rum::instruct::load_prog
+
+    42  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-reloc.c:_dl_relocate_object (7x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+     6  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/stack_overflow.rs:std::sys::unix::stack_overflow::imp::make_handler (1x) [/home/evan/rum/target/release/rum]
+    48  *  /build/glibc-SzIz7B/glibc-2.31/misc/../sysdeps/unix/syscall-template.S:mprotect [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+    48  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-memmove.h:memmove
+
+   130  < /build/glibc-SzIz7B/glibc-2.31/signal/../sysdeps/posix/signal.c:signal (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    47  *  /build/glibc-SzIz7B/glibc-2.31/signal/../sysdeps/posix/signal.c:__bsd_signal.part.0 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    83  >   /build/glibc-SzIz7B/glibc-2.31/signal/../nptl/sigaction.c:sigaction (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+   246  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   120  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:fillin_rpath (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    46  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:expand_dynamic_string_token [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   206  >   /build/glibc-SzIz7B/glibc-2.31/string/strdup.c:strdup (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   114  >   /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strchr.S:index (2x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+   190  < /build/glibc-SzIz7B/glibc-2.31/libio/iofclose.c:fclose@@GLIBC_2.2.5 (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    46  *  /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_close_it@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   114  >   /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_setb (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    10  >   /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_unsave_markers (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     9  >   /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_close (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     4  >   /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_un_link (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+    84  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/fs.rs:<std::fs::File as std::io::Read>::read_to_end (1x) [/home/evan/rum/target/release/rum]
+    46  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/io/mod.rs:std::io::default_read_to_end [/home/evan/rum/target/release/rum]
+
+ 1,154  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/thread_local_dtor.rs:std::sys::unix::thread_local_dtor::register_dtor (1x) [/home/evan/rum/target/release/rum]
+    45  *  /build/glibc-SzIz7B/glibc-2.31/stdlib/cxa_thread_atexit_impl.c:__cxa_thread_atexit_impl [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   949  >   ???:0x00000000048a6550 (1x) [???]
+    94  >   ???:0x00000000048a6510 (1x) [???]
+    35  >   /build/glibc-SzIz7B/glibc-2.31/nptl/../nptl/pthread_mutex_lock.c:pthread_mutex_lock (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+    31  >   /build/glibc-SzIz7B/glibc-2.31/nptl/pthread_mutex_unlock.c:pthread_mutex_unlock (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+
+   287  < /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_doallocbuf (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    44  *  /build/glibc-SzIz7B/glibc-2.31/libio/filedoalloc.c:_IO_file_doallocate [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   195  >   ???:0x00000000048a6310 (1x) [???]
+    25  >   /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_setb (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    16  >   /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_stat (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+    44  *  /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:malloc_hook_ini
+   476  >   /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:tcache_init.part.0 (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   136  >   /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_malloc (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+    99  < /build/glibc-SzIz7B/glibc-2.31/elf/dl-cache.c:_dl_load_cache_lookup (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    43  *  /build/glibc-SzIz7B/glibc-2.31/elf/dl-misc.c:_dl_sysdep_read_whole_file [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    20  >   /build/glibc-SzIz7B/glibc-2.31/misc/../sysdeps/unix/sysv/linux/mmap64.c:mmap (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    19  >   /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/open64_nocancel.c:__open_nocancel (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    11  >   /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:_fxstat (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+     6  >   /build/glibc-SzIz7B/glibc-2.31/io/../sysdeps/unix/sysv/linux/close_nocancel.c:__GI___close_nocancel (1x) [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+
+    42  *  /build/glibc-SzIz7B/glibc-2.31/libio/iofopen.c:fopen@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+75,361  >   ???:0x00000000048a6310 (1x) [???]
+   235  >   /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_fopen@@GLIBC_2.2.5 (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   132  >   /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_new_file_init_internal (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    53  >   /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_no_init (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+    42  *  /build/glibc-SzIz7B/glibc-2.31/libio/libioP.h:__underflow
+
+    42  *  /build/glibc-SzIz7B/glibc-2.31/posix/../sysdeps/unix/sysv/linux/x86/../sysconf.c:sysconf
+
+    64  < /build/glibc-SzIz7B/glibc-2.31/csu/../csu/libc-start.c:(below main) (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    41  *  ???:__libc_csu_init [/home/evan/rum/target/release/rum]
+    12  >   ???:0x0000000000008b10 (1x) [/home/evan/rum/target/release/rum]
+     7  >   ???:0x000000000010f000 (1x) [???]
+     4  >   /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/args.rs:std::sys::unix::args::imp::ARGV_INIT_ARRAY::init_wrapper (1x) [/home/evan/rum/target/release/rum]
+
+    40  < /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/ffi/c_str.rs:std::env::args_os (2x)
+    40  *  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strlen-avx2.S:__strlen_avx2 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+    39  *  /rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys/unix/thread.rs:std::rt::lang_start_internal
+201,177  >   /build/glibc-SzIz7B/glibc-2.31/nptl/pthread_getattr_np.c:pthread_getattr_np (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+    91  >   /build/glibc-SzIz7B/glibc-2.31/nptl/pthread_attr_destroy.c:pthread_attr_destroy (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+     9  >   /build/glibc-SzIz7B/glibc-2.31/nptl/pthread_attr_getstack.c:pthread_attr_getstack (1x) [/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+     3  >   /build/glibc-SzIz7B/glibc-2.31/nptl/pthread_self.c:pthread_self (1x) [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
