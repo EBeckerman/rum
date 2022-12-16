@@ -61,6 +61,7 @@ pub fn instructs(instructions: Vec<u32>) {
         let mut regb = 0;
         let mut regc = 0;
         let mut value = 0;
+        
 
         if opcode == 13 {
             //[1-4][5-7][8-32]
@@ -91,6 +92,8 @@ pub fn instructs(instructions: Vec<u32>) {
             13 => instruct::load_val(&mut active_state, rega as usize, value as usize),
             _ => panic!("Invalid OpCode {}", opcode)
         }
+
+        
         
     }
     

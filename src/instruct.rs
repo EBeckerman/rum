@@ -28,6 +28,7 @@ pub fn con_move(active_state: &mut UmState, rega:usize, regb:usize, regc:usize) 
 /// * rega: Index of register A
 /// * regb: Index of register B
 /// * rebc: Index of register C
+
 pub fn seg_load(active_state: &mut UmState, rega:usize, regb:usize, regc:usize) {
     active_state.registers[rega] = active_state.memory[active_state.registers[regb] as usize][active_state.registers[regc] as usize];
     
@@ -42,6 +43,7 @@ pub fn seg_load(active_state: &mut UmState, rega:usize, regb:usize, regc:usize) 
 /// * rega: Index of register A
 /// * regb: Index of register B
 /// * rebc: Index of register C
+/// 
 pub fn seg_store(active_state: &mut UmState, rega:usize, regb:usize, regc:usize) {
     //println!("{}, {}, {}", active_state.registers[rega], active_state.registers[regb], active_state.registers[regc]);
     // println!("[DEBUG] seg_store start");
@@ -117,6 +119,8 @@ pub fn bnand(active_state: &mut UmState, rega:usize, regb:usize, regc:usize) {
 /// * active_state: A struct containing the registers, memory, isntance counter, and memeory tracker
 /// * regb: Index of register B
 /// * rebc: Index of register C
+/// 
+
 pub fn map_seg(active_state: &mut UmState, regb:usize, regc:usize) {
     // println!("[DEBUG] Mapping a new segment");
     // println!("[DEBUG] Current number of memory segments is {}", active_state.memory.len());
@@ -134,10 +138,19 @@ pub fn map_seg(active_state: &mut UmState, regb:usize, regc:usize) {
     else{
         let init = active_state.registers[regc] as usize;
         let mem_seg: Vec<u32> = vec![0; init];
-        let mem_pos = active_state.memory_tracker.remove(0);
-        active_state.memory[mem_pos as usize]= mem_seg; 
-        active_state.registers[regb] = mem_pos;
+        let mem_pos = active_state.memory_tracker.pop();
+        active_state.memory[mem_pos.unwrap() as usize]= mem_seg; 
+        active_state.registers[regb] = mem_pos.unwrap();
     }
+
+    // Old code that was slower than new implementaion
+    // else{
+    //     let init = active_state.registers[regc] as usize;
+    //     let mem_seg: Vec<u32> = vec![0; init];
+    //     let mem_pos = active_state.memory_tracker.remove();
+    //     active_state.memory[mem_pos as usize]= mem_seg; 
+    //     active_state.registers[regb] = mem_pos;
+    // }
 
  
 
@@ -217,14 +230,19 @@ pub fn input(active_state: &mut UmState, regc: usize) {
 /// * regb: Index of register B
 /// * rebc: Index of register C
 pub fn load_prog(active_state: &mut UmState, regb: usize, regc: usize) {
-    if active_state.registers[regb] == 0 {
-        active_state.inst_count = active_state.registers[regc];
-        //println!("new inst count: {:b}", active_state.memory[0][active_state.registers[regc] as usize]);
-    }
-    else {
+    // if active_state.registers[regb] == 0 {
+    //     active_state.inst_count = active_state.registers[regc];
+    //     //println!("new inst count: {:b}", active_state.memory[0][active_state.registers[regc] as usize]);
+    // }
+    // else {
+    //     active_state.memory[0] = active_state.memory[active_state.registers[regb] as usize].clone();
+    //     //println!("new inst count: {}", active_state.memory[0][active_state.registers[regc] as usize]);
+    //     active_state.inst_count = active_state.registers[regc];
+    // }
+    active_state.inst_count = active_state.registers[regc];
+    if active_state.registers[regb] != 0 {
         active_state.memory[0] = active_state.memory[active_state.registers[regb] as usize].clone();
         //println!("new inst count: {}", active_state.memory[0][active_state.registers[regc] as usize]);
-        active_state.inst_count = active_state.registers[regc];
     }
 
 }
